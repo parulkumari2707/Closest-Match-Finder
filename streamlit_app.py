@@ -3,7 +3,7 @@ import streamlit as st
 from fuzzywuzzy import process
 
 # Define your array of items
-array_of_items = ["US", "UK", "Canada", "Australia", "Germany", "France"]
+array_of_items = ["USA", "UK", "Canada", "Australia", "Germany", "France", "India", "Greece", "Bhutan", "South Korea", "Japan", "Russia", "China","Italy","Brazil","South Africa","New Zealand","Saudi Arabia"]
 
 def find_closest_match(input_text, array_of_items):
     closest_match, similarity_score = process.extractOne(input_text, array_of_items)
